@@ -1,0 +1,51 @@
+/* Tokyo Night para rofi */
+* {
+  bg:      #1a1b26;
+  bg-alt:  #16161e;
+  bg-hl:   #292e42;
+  fg:      #c0caf5;
+  fg-dim:  #565f89;
+  blue:    #7aa2f7;
+  magenta: #bb9af7;
+
+  font: "MesloLGM Nerd Font 11";
+  background-color: transparent;
+  text-color: @fg;
+  margin: 0; padding: 0; spacing: 0;
+}
+
+window {
+  width: 560px;
+  location: center;
+  anchor: center;
+  background-color: @bg;
+  border: 2px;
+  border-color: @blue;
+  border-radius: 10px;
+}
+
+mainbox { padding: 12px; spacing: 10px; }
+
+inputbar {
+  background-color: @bg-alt;
+  border-radius: 8px;
+  padding: 8px 12px;
+  spacing: 8px;
+  children: [ prompt, entry ];
+}
+prompt { text-color: @magenta; }
+entry  { placeholder: "buscar..."; placeholder-color: @fg-dim; }
+
+listview { lines: 8; columns: 1; fixed-height: false; scrollbar: false; spacing: 4px; }
+
+element {
+  padding: 7px 12px;
+  border-radius: 6px;
+  spacing: 10px;
+}
+element normal.normal, element alternate.normal { background-color: transparent; }
+element selected.normal { background-color: @bg-hl; text-color: @blue; }
+element-icon { size: 22px; }
+element-text { text-color: inherit; vertical-align: 0.5; }
+
+message { background-color: @bg-alt; border-radius: 6px; padding: 8px; }

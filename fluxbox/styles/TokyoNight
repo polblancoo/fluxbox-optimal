@@ -1,0 +1,140 @@
+! ------------------------------------------------------------
+! Tokyo Night - estilo Fluxbox (plano, sin gradientes)
+! Paleta: bg #1a1b26  bg_dark #16161e  bg_hl #292e42  fg #c0caf5
+!         comment #565f89  blue #7aa2f7  cyan #7dcfff  magenta #bb9af7
+! Las esquinas redondeadas y sombras las pone picom.
+! ------------------------------------------------------------
+style.name:     Tokyo Night
+style.author:   fluxbox-optimal
+
+! ---------- fuentes ----------
+*font:                              MesloLGM Nerd Font-9
+window.font:                        MesloLGM Nerd Font-9:bold
+menu.title.font:                    MesloLGM Nerd Font-10:bold
+menu.frame.font:                    MesloLGM Nerd Font-9
+menu.hilite.font:                   MesloLGM Nerd Font-9:bold
+toolbar.clock.font:                 MesloLGM Nerd Font-10:bold
+toolbar.workspace.font:             MesloLGM Nerd Font-10:bold
+toolbar.iconbar.focused.font:       MesloLGM Nerd Font-10:bold
+toolbar.iconbar.unfocused.font:     MesloLGM Nerd Font-10
+
+! ---------- menú ----------
+menu.bevelWidth:                    2
+menu.borderWidth:                   1
+menu.borderColor:                   #3b4261
+menu.itemHeight:                    22
+menu.titleHeight:                   24
+menu.bullet:                        triangle
+menu.bullet.position:               right
+
+menu.title:                         flat solid
+menu.title.color:                   #1f2335
+menu.title.textColor:               #7aa2f7
+menu.title.justify:                 center
+
+menu.frame:                         flat solid
+menu.frame.color:                   #24283b
+menu.frame.textColor:               #c0caf5
+menu.frame.disableColor:            #737aa2
+menu.frame.justify:                 left
+
+menu.hilite:                        flat solid
+menu.hilite.color:                  #3d59a1
+menu.hilite.textColor:              #ffffff
+
+! ---------- toolbar ----------
+toolbar:                            flat solid
+toolbar.color:                      #16161e
+toolbar.height:                     28
+toolbar.bevelWidth:                 0
+toolbar.borderWidth:                0
+toolbar.shaped:                     false
+
+toolbar.workspace:                  flat solid
+toolbar.workspace.color:            #16161e
+toolbar.workspace.textColor:        #bb9af7
+toolbar.workspace.justify:          center
+
+toolbar.clock:                      flat solid
+toolbar.clock.color:                #16161e
+toolbar.clock.textColor:            #7aa2f7
+toolbar.clock.justify:              center
+
+toolbar.button:                     flat solid
+toolbar.button.color:               #16161e
+toolbar.button.picColor:            #7aa2f7
+toolbar.button.pressed:             flat solid
+toolbar.button.pressed.color:       #292e42
+toolbar.button.pressed.picColor:    #7dcfff
+
+toolbar.iconbar.empty:              flat solid
+toolbar.iconbar.empty.color:        #16161e
+
+toolbar.iconbar.focused:            flat solid
+toolbar.iconbar.focused.color:      #292e42
+toolbar.iconbar.focused.textColor:  #c0caf5
+toolbar.iconbar.focused.justify:    center
+
+toolbar.iconbar.unfocused:          flat solid
+toolbar.iconbar.unfocused.color:    #16161e
+toolbar.iconbar.unfocused.textColor: #565f89
+toolbar.iconbar.unfocused.justify:  center
+
+! ---------- ventanas ----------
+window.bevelWidth:                  2
+window.borderWidth:                 1
+window.borderColor:                 #292e42
+window.title.height:                24
+window.justify:                     center
+window.shade:                       true
+
+window.title.focus:                 flat solid
+window.title.focus.color:           #1a1b26
+window.title.unfocus:               flat solid
+window.title.unfocus.color:         #16161e
+
+window.label.focus:                 flat solid
+window.label.focus.color:           #1a1b26
+window.label.focus.textColor:       #c0caf5
+window.label.unfocus:               flat solid
+window.label.unfocus.color:         #16161e
+window.label.unfocus.textColor:     #565f89
+window.label.active:                flat solid
+window.label.active.color:          #292e42
+window.label.active.textColor:      #7aa2f7
+
+window.button.focus:                flat solid
+window.button.focus.color:          #1a1b26
+window.button.focus.picColor:       #7aa2f7
+window.button.unfocus:              flat solid
+window.button.unfocus.color:        #16161e
+window.button.unfocus.picColor:     #414868
+window.button.pressed:              flat solid
+window.button.pressed.color:        #292e42
+window.button.pressed.picColor:     #f7768e
+
+window.handleWidth:                 3
+window.handle.focus:                flat solid
+window.handle.focus.color:          #1a1b26
+window.handle.unfocus:              flat solid
+window.handle.unfocus.color:        #16161e
+
+window.grip.focus:                  flat solid
+window.grip.focus.color:            #7aa2f7
+window.grip.unfocus:                flat solid
+window.grip.unfocus.color:          #292e42
+
+window.frame.focusColor:            #7aa2f7
+window.frame.unfocusColor:          #292e42
+
+! pestañas agrupadas
+window.tab.borderWidth:             0
+window.tab.justify:                 center
+
+! ---------- slit ----------
+slit:                               flat solid
+slit.color:                         #16161e
+slit.borderWidth:                   0
+
+! fondo: lo pone feh desde startup
+background:                         none

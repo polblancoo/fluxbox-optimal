@@ -1,0 +1,25 @@
+[app] (name=fbrun)
+  [Position] (CENTER) {500 500}
+  [Layer] {2}
+[end]
+
+# Ayuda de atajos (Win + ?)
+[app] (class=fluxhelp)
+  [Dimensions] {1340 740}
+  [Position] (CENTER) {0 0}
+  [Layer] {2}
+[end]
+
+# Terminal desplegable (F12)
+[app] (class=scratchpad)
+  [Deco] {NONE}
+  [Sticky] {yes}
+  [Layer] {2}
+  [Dimensions] {80% 45%}
+  [Position] (TOP) {0 0}
+[end]
+
+[app] (class=kitty)
+  [Position] (WINCENTER) {0 0}
+  [Dimensions] {800 600}
+[end]

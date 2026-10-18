@@ -1,0 +1,45 @@
+[begin] (fluxbox)
+  [exec] (Terminal  " Win+ Intro") {kitty}
+  [exec] (Editor Neovim (NvChad)) {kitty -e nvim}
+  [exec] (Archivos  " Win+F") {~/.fluxbox/scripts/filemanager.sh}
+  [exec] (Navegador  " Win+B") {x-www-browser}
+  [exec] (tubetui · YouTube en la terminal  " Win+Y") {kitty --class tubetui -T tubetui -e tubetui}
+  [exec] (Captura de pantalla  " ImpPant") {flameshot gui}
+  [exec] (Calculadora) {sh -c 'gnome-calculator || mate-calc || galculator || kcalc'}
+  [exec] (aMule) {amule}
+  [exec] (Ayuda atajos  "win + ?") {kitty --class=fluxhelp -o font_size=10 -e ~/.fluxbox/help.sh}
+
+[separator]
+[submenu] (Herramientas)
+    [exec] (Monitor sistema) {kitty -e btop}
+    [exec] (Espacio en disco) {kitty -e ncdu ~/}
+    [exec] (GParted) {pkexec gparted}
+    [exec] (Audio · pavucontrol) {pavucontrol}
+    [exec] (Bluetooth) {blueman-manager}
+    [exec] (Pantallas · arandr) {arandr}
+[end]
+
+[separator]
+
+[submenu] (Configuración)
+    [reconfig] (Recargar config)
+    [restart] (Reiniciar Fluxbox (no cierra ventanas))
+    [separator]
+    [config] (Configurar Fluxbox)
+    [submenu] (Estilos)
+      [stylesdir] (~/.fluxbox/styles)
+      [separator]
+      [stylesdir] (/usr/share/fluxbox/styles)
+    [end]
+    [workspaces] (Workspaces)
+  [end]
+
+[separator]
+  [exec] (Apagar) {systemctl poweroff}
+  [exec] (Reiniciar) {systemctl reboot}
+  [exec] (Cerrar sesión) {pkill -u $USER}
+  [separator]
+  [exit] (Salir de Fluxbox)
+[end]
+
+[include] (/etc/X11/fluxbox/fluxbox-menu)

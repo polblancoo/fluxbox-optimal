@@ -1,0 +1,51 @@
+#!/bin/sh
+# fluxbox startup-script
+
+# Algunos gestores de sesión marcan la sesión como wayland aunque Fluxbox es X11:
+# navegadores y otras apps intentan Wayland y no abren.
+export XDG_SESSION_TYPE=x11
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+
+# Pantallas: autorandr si hay perfiles guardados, si no todo lo que se detecte
+if command -v autorandr >/dev/null && [ -n "$(autorandr --list 2>/dev/null)" ]; then
+    autorandr --change
+else
+    xrandr --auto
+fi
+
+# Repetición de teclas más rápida (espera 250ms, 40 repeticiones/seg) - ideal para nvim
+xset r rate 250 40
+
+# Compositor: sin tearing, sombras, esquinas redondeadas
+command -v picom >/dev/null && picom --daemon
+
+# Fondo de pantalla: ~/.fluxbox/wallpaper.* si existe; si no, color liso Tokyo Night
+wp=$(ls "$HOME"/.fluxbox/wallpaper.* 2>/dev/null | head -1)
+if [ -n "$wp" ] && command -v feh >/dev/null; then
+    feh --bg-fill "$wp" &
+else
+    xsetroot -solid '#1a1b26'
+fi
+
+# polkit (pkexec / GParted) y montaje automático de USB
+for agent in /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 \
+             /usr/libexec/polkit-gnome-authentication-agent-1; do
+    [ -x "$agent" ] && { "$agent" & break; }
+done
+command -v udiskie >/dev/null && udiskie --tray &
+
+# Bandeja: usa la systemtray del toolbar de Fluxbox
+command -v nm-applet >/dev/null && nm-applet &
+command -v blueman-applet >/dev/null && blueman-applet &
+command -v pasystray >/dev/null && pasystray &
+
+# Notificaciones
+command -v dunst >/dev/null && dunst &
+
+# Historial del portapapeles (Win + V), opcional
+command -v greenclip >/dev/null && greenclip daemon &
+
+# Conky básico
+command -v conky >/dev/null && conky &
+
+exec fluxbox

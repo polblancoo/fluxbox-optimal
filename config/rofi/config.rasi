@@ -1,0 +1,14 @@
+configuration {
+  modi: "drun,run,window";
+  show-icons: true;
+  icon-theme: "Adwaita";
+  display-drun: "  Apps";
+  display-run: "  Run";
+  display-window: "  Ventanas";
+  drun-display-format: "{name}";
+  terminal: "kitty";
+  matching: "fuzzy";
+  sort: true;
+}
+
+@theme "~/.config/rofi/tokyonight.rasi"
