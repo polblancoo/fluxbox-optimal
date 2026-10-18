@@ -1,6 +1,6 @@
 #!/bin/bash
 # ---------------------------------------------------------------
-# help.sh - Chuleta de atajos de Fluxbox (Win + ?  /  Ctrl + ?  /  Alt + F12)
+# help.sh - Chuleta de atajos de Fluxbox (Win + ?  /  Ctrl + ?  /  Win + F12)
 # Dos columnas, colores Tokyo Night. Sale con q.
 # Si cambiás ~/.fluxbox/keys, actualizá también esta lista.
 # ---------------------------------------------------------------
@@ -40,7 +40,7 @@ k "Win + O"                "Abrir un proyecto git (kitty + nvim)"
 k "Win + S"                "Buscar en la web (gh yt w)"
 k "F12"                    "Terminal desplegable (mostrar/ocultar)"
 k "Alt + F2"               "Ejecutar comando (fbrun)"
-k "Win/Ctrl + ?  Alt+F12"  "Esta ayuda"
+k "Win/Ctrl + ?  Win+F12" "Esta ayuda"
 gap
 sec "HERRAMIENTAS"
 k "Win + A"                "Salida de audio: compu/TV/auris/BT"
@@ -54,7 +54,7 @@ gap
 sec "ESTUDIO Y MEDIA"
 k "Win + E"                "Modo estudio: sin notifs + pomodoro"
 k "Win + Shift + N"        "Luz nocturna (pantalla cálida) on/off"
-k "Win + Y"                "tubetui: YouTube + video integrado, pestañas, música local"
+k "Win + Y"                "tubetui: YouTube + música y videos locales"
 k "Win + Shift + Y"        "Descargar URL copiada a ~/Videos"
 gap
 sec "VENTANAS"

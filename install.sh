@@ -94,7 +94,7 @@ Listo. Lo que no se instala solo (opcional):
   • spf         gestor de archivos en terminal → https://superfile.dev
   • greenclip   historial del portapapeles (Win+V) → releases de https://github.com/erebe/greenclip
   • aMule       sudo apt install amule
-  • wallpaper   copiá una imagen a ~/.fluxbox/wallpaper.jpg (o .png)
+  • wallpaper   el del repo es ~/.fluxbox/wallpaper-default.png; el tuyo: ~/.fluxbox/wallpaper.jpg (o .png)
 
-Cerrá sesión y elegí "Fluxbox" en el login. Atajos: Win + ?  (o Alt + F12).
+Cerrá sesión y elegí "Fluxbox" en el login. Atajos: Win + ?  (o Win + F12).
 MSG

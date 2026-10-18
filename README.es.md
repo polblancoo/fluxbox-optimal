@@ -12,10 +12,21 @@ Fluxbox · kitty · rofi · picom · dunst · conky · NvChad · superfile
 
 ---
 
+## Capturas
+
+![Escritorio: NvChad, tubetui, conky y Tokyo Night](docs/screenshots/01-escritorio.png)
+
+| | |
+|---|---|
+| ![Cheat sheet](docs/screenshots/02-ayuda.png)<br>Chuleta integrada (`Win+?` / `Win+F12`) | ![tubetui](docs/screenshots/03-tubetui.png)<br>tubetui en `Win+Y` |
+| ![Menu](docs/screenshots/04-menu.png)<br>Menú principal | ![rofi](docs/screenshots/05-rofi.png)<br>Lanzador rofi (`Win+P`) |
+| ![spf](docs/screenshots/06-spf.png)<br>superfile en `Win+F` | ![Power](docs/screenshots/07-energia.png)<br>Menú de energía (`Win+X`) |
+| ![Window mode](docs/screenshots/08-modo-ventana.png)<br>Modo ventana estilo vim (`Win+R`) | ![Drop-down](docs/screenshots/09-terminal-desplegable.png)<br>Terminal desplegable (`F12`) |
+
 ## Qué trae
 
 - **Tokyo Night en todo**: estilo de Fluxbox, kitty, rofi, dunst y conky.
-- **Pensado para teclado**: lanzadores con `Win`, modo ventana estilo vim (`Win+R`), mitades de pantalla, terminal desplegable (`F12`) y una chuleta integrada (`Win+?` o `Alt+F12`).
+- **Pensado para teclado**: lanzadores con `Win`, modo ventana estilo vim (`Win+R`), mitades de pantalla, terminal desplegable (`F12`) y una chuleta integrada (`Win+?` o `Win+F12`).
 - **tubetui en `Win+Y`**: YouTube, suscripciones, música y videos locales, video integrado en kitty.
 - **Scripts útiles** (en `fluxbox/scripts/`, shell simple):
   salida de audio (`Win+A`), menú Bluetooth (`Win+Shift+B`), menú de energía (`Win+X`), modo estudio con pomodoro (`Win+E`), modo película (`Win+M`), luz nocturna, compositor on/off, abrir proyecto (`Win+O`), buscador web (`Win+S`), historial del portapapeles (`Win+V`).
@@ -35,7 +46,7 @@ cd fluxbox-optimal
 ./install.sh
 ```
 
-El instalador hace backup de lo que reemplaza (`~/.fluxbox.bak-<fecha>`, …), no toca tu fondo de pantalla y pregunta antes de bajar la fuente Nerd Font o NvChad.
+El instalador hace backup de lo que reemplaza (`~/.fluxbox.bak-<fecha>`, …), pregunta antes de bajar la fuente Nerd Font o NvChad.
 Después cerrá sesión y elegí **Fluxbox** en el login.
 
 ### Piezas opcionales (no se instalan solas)
@@ -46,11 +57,11 @@ Después cerrá sesión y elegí **Fluxbox** en el login.
 | superfile (`spf`) | https://superfile.dev |
 | greenclip (portapapeles) | releases de https://github.com/erebe/greenclip |
 | aMule | `sudo apt install amule` (ya está en el menú) |
-| Fondo | copiá una imagen a `~/.fluxbox/wallpaper.jpg` o `.png` |
+| Fondo | trae uno Tokyo Night; para usar el tuyo copiá una imagen a `~/.fluxbox/wallpaper.jpg` o `.png` |
 
 ## Atajos
 
-`Win` = tecla Super. **`Win + ?`** (o `Alt + F12`) abre la chuleta completa. Lo principal:
+`Win` = tecla Super. **`Win + ?`** (o `Win + F12`) abre la chuleta completa. Lo principal:
 
 | Teclas | Acción |
 |---|---|
@@ -64,7 +75,7 @@ Después cerrá sesión y elegí **Fluxbox** en el login.
 | `Win+A` | salida de audio |
 | `Win+X` | menú de energía |
 
-> `Win+?` usa el keycode 20, que es la tecla `?` en teclados español/latinoamericano. En otras distribuciones usá `Alt+F12` o editá `fluxbox/keys` (el keycode se ve con `xev`).
+> `Win+?` usa el keycode 20, que es la tecla `?` en teclados español/latinoamericano. En otras distribuciones usá `Win+F12` o editá `fluxbox/keys` (el keycode se ve con `xev`).
 
 ## Estructura
 

@@ -145,7 +145,7 @@ Control Mod4 F8 :TakeToWorkspace 8
 # Scripts personales
 # ------------------------------------------------------------
 
-Mod1 F12 :Exec kitty --class=fluxhelp -o font_size=10 -e $HOME/.fluxbox/help.sh
+Mod4 F12 :Exec kitty --class=fluxhelp -o font_size=10 -e $HOME/.fluxbox/help.sh
 
 # Redimensionar ventanas sin ratón (Alt + flechas)
 Mod1 Right :ResizeHorizontal  +5%

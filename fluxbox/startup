@@ -19,9 +19,10 @@ xset r rate 250 40
 # Compositor: sin tearing, sombras, esquinas redondeadas
 command -v picom >/dev/null && picom --daemon
 
-# Fondo de pantalla: ~/.fluxbox/wallpaper.* si existe; si no, color liso Tokyo Night
+# Fondo de pantalla: ~/.fluxbox/wallpaper.* (el tuyo) o el que trae el repo
 wp=$(ls "$HOME"/.fluxbox/wallpaper.* 2>/dev/null | head -1)
-if [ -n "$wp" ] && command -v feh >/dev/null; then
+[ -z "$wp" ] && wp="$HOME/.fluxbox/wallpaper-default.png"
+if [ -f "$wp" ] && command -v feh >/dev/null; then
     feh --bg-fill "$wp" &
 else
     xsetroot -solid '#1a1b26'

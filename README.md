@@ -12,10 +12,21 @@ Fluxbox · kitty · rofi · picom · dunst · conky · NvChad · superfile
 
 ---
 
+## Screenshots
+
+![Desktop: NvChad, tubetui, conky and Tokyo Night](docs/screenshots/01-escritorio.png)
+
+| | |
+|---|---|
+| ![Cheat sheet](docs/screenshots/02-ayuda.png)<br>Built-in cheat sheet (`Win+?` / `Win+F12`) | ![tubetui](docs/screenshots/03-tubetui.png)<br>tubetui on `Win+Y` |
+| ![Menu](docs/screenshots/04-menu.png)<br>Root menu | ![rofi](docs/screenshots/05-rofi.png)<br>rofi launcher (`Win+P`) |
+| ![spf](docs/screenshots/06-spf.png)<br>superfile on `Win+F` | ![Power](docs/screenshots/07-energia.png)<br>Power menu (`Win+X`) |
+| ![Window mode](docs/screenshots/08-modo-ventana.png)<br>Vim-style window mode (`Win+R`) | ![Drop-down](docs/screenshots/09-terminal-desplegable.png)<br>Drop-down terminal (`F12`) |
+
 ## What you get
 
 - **Tokyo Night everywhere**: Fluxbox style, kitty, rofi, dunst, conky.
-- **Keyboard-first**: `Win` launchers, a vim-style window mode (`Win+R`), half-screen tiling, a drop-down terminal (`F12`) and a built-in cheat sheet (`Win+?` or `Alt+F12`).
+- **Keyboard-first**: `Win` launchers, a vim-style window mode (`Win+R`), half-screen tiling, a drop-down terminal (`F12`) and a built-in cheat sheet (`Win+?` or `Win+F12`).
 - **tubetui on `Win+Y`**: YouTube, subscriptions, local music/videos, video embedded in kitty.
 - **Quality-of-life scripts** (all in `fluxbox/scripts/`, plain shell):
   audio output picker (`Win+A`), Bluetooth menu (`Win+Shift+B`), power menu (`Win+X`), study mode with pomodoro (`Win+E`), movie mode (`Win+M`), night light, compositor toggle, project launcher (`Win+O`), web search (`Win+S`), clipboard history (`Win+V`).
@@ -35,7 +46,7 @@ cd fluxbox-optimal
 ./install.sh
 ```
 
-The installer backs up anything it replaces (`~/.fluxbox.bak-<date>`, …), never touches your wallpaper, and asks before downloading the Nerd Font or NvChad.
+The installer backs up anything it replaces (`~/.fluxbox.bak-<date>`, …), and asks before downloading the Nerd Font or NvChad.
 Then log out and pick **Fluxbox** at the login screen.
 
 ### Optional pieces (not installed automatically)
@@ -46,11 +57,11 @@ Then log out and pick **Fluxbox** at the login screen.
 | superfile (`spf`) | https://superfile.dev |
 | greenclip (clipboard history) | releases of https://github.com/erebe/greenclip |
 | aMule | `sudo apt install amule` (it is in the menu) |
-| Wallpaper | drop an image at `~/.fluxbox/wallpaper.jpg` or `.png` |
+| Wallpaper | a Tokyo Night one is included; to use yours drop an image at `~/.fluxbox/wallpaper.jpg` or `.png` |
 
 ## Key bindings
 
-`Win` = Super key. Press **`Win + ?`** (or `Alt + F12`) for the full cheat sheet; the highlights:
+`Win` = Super key. Press **`Win + ?`** (or `Win + F12`) for the full cheat sheet; the highlights:
 
 | Keys | Action |
 |---|---|
@@ -64,7 +75,7 @@ Then log out and pick **Fluxbox** at the login screen.
 | `Win+A` | audio output |
 | `Win+X` | power menu |
 
-> The `Win+?` binding uses keycode 20, which is the `?` key on Spanish/Latin-American layouts. On other layouts use `Alt+F12`, or edit `fluxbox/keys` (find your keycode with `xev`).
+> The `Win+?` binding uses keycode 20, which is the `?` key on Spanish/Latin-American layouts. On other layouts use `Win+F12`, or edit `fluxbox/keys` (find your keycode with `xev`).
 
 ## Layout
 

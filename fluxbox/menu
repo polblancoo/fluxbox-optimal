@@ -1,13 +1,13 @@
 [begin] (fluxbox)
-  [exec] (Terminal  " Win+ Intro") {kitty}
-  [exec] (Editor Neovim (NvChad)) {kitty -e nvim}
-  [exec] (Archivos  " Win+F") {~/.fluxbox/scripts/filemanager.sh}
-  [exec] (Navegador  " Win+B") {x-www-browser}
-  [exec] (tubetui · YouTube en la terminal  " Win+Y") {kitty --class tubetui -T tubetui -e tubetui}
-  [exec] (Captura de pantalla  " ImpPant") {flameshot gui}
+  [exec] (Terminal  ·  Win+Enter) {kitty}
+  [exec] (Neovim · NvChad  ·  Win+N) {kitty -e nvim}
+  [exec] (Archivos  ·  Win+F) {~/.fluxbox/scripts/filemanager.sh}
+  [exec] (Navegador  ·  Win+B) {x-www-browser}
+  [exec] (tubetui · YouTube en la terminal  ·  Win+Y) {kitty --class tubetui -T tubetui -e tubetui}
+  [exec] (Captura de pantalla  ·  ImpPant) {flameshot gui}
   [exec] (Calculadora) {sh -c 'gnome-calculator || mate-calc || galculator || kcalc'}
   [exec] (aMule) {amule}
-  [exec] (Ayuda atajos  "win + ?") {kitty --class=fluxhelp -o font_size=10 -e ~/.fluxbox/help.sh}
+  [exec] (Ayuda de atajos  ·  Win+F12) {kitty --class=fluxhelp -o font_size=10 -e ~/.fluxbox/help.sh}
 
 [separator]
 [submenu] (Herramientas)
