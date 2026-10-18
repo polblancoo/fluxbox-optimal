@@ -7,7 +7,7 @@
   [exec] (Captura de pantalla  ·  ImpPant) {flameshot gui}
   [exec] (Calculadora) {sh -c 'gnome-calculator || mate-calc || galculator || kcalc'}
   [exec] (aMule) {amule}
-  [exec] (Ayuda de atajos  ·  Win+F12) {kitty --class=fluxhelp -o font_size=10 -e ~/.fluxbox/help.sh}
+  [exec] (Ayuda de atajos  ·  Win+?) {kitty --class=fluxhelp -o font_size=10 -e ~/.fluxbox/help.sh}
 
 [separator]
 [submenu] (Herramientas)
